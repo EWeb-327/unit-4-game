@@ -2,6 +2,10 @@
     width: auto;
     font-family: 'PT Sans', sans-serif;
 }
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: block;}
 body {
     font-family: 'PT Sans', sans-serif;
     background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/memphis-mini.png")
@@ -21,23 +25,45 @@ h1 {
 #directions {
     background-color: #b3feff;
     float: left;
-    height: 200px;
-    width: 48%;
-    margin: 0 1%;
-}
-#total {
-    background-color:#7b97ea;
-    float: left;
-    height: 100px;
-    width: 24%;
-    margin-right: 1%;
+    height: 190px;
+    width: 46%;
+    margin: 0 2% 1% 1.75%;
+    font-size: 22px;
+    padding: 15px 5px 0 5px;
 }
 #number-to-guess {
     background-color: #ff99cf;
     float: left;
     height: 100px;
+    width: 23%;
+    margin-right: 1%;
+    text-align: center;
+    line-height: 3.5;
+    font-size: 30px;
+}
+#total {
+    background-color:#7b97ea;
+    font-size: 23px;
+    text-align: center;
+    line-height: 1.5;
+    float: left;
+    height: 100px;
     width: 24%;
     margin-right: 1%;
+}
+.score {
+    background-color: #a679d2;
+    float: left;
+    height: 86px;
+    width: 47%;
+    margin: 1% 1% 1% 0;
+    font-size: 24px;
+    line-height: 1.5;
+    padding: 10px 0 0 8px;
+
+}
+#buttons {
+    text-align: center;
 }
 img {
     height: 75px;

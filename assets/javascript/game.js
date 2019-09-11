@@ -35,11 +35,12 @@ for (var i = 0; i < numberOptions.length; i++) {
     imageCrystal4.attr("data-crystalvalue", numberOptions[3]);
 }
 function restart() {
+    counter = 0
+    $("#total").text("Your total score is: ")
     min = 19;
     max = 120;
     targetNumber = Math.floor(Math.random() * (+max - +min) + +min);
     $("#number-to-guess").text(targetNumber);
-    counter = 0
 }
 // This time, our click event applies to every single crystal on the page. Not just one.
 $(".crystal").on("click", function () {
@@ -56,7 +57,7 @@ $(".crystal").on("click", function () {
     counter += crystalValue;
 
     // All of the same game win-lose logic applies. So the rest remains unchanged.
-    $("#total").text("New score: " + counter);
+    $("#total").text("Your total score is: " + counter);
 
     if (counter === targetNumber) {
         wins++;
