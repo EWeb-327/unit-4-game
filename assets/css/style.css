@@ -25,10 +25,11 @@ h1 {
 #directions {
     background-color: #b3feff;
     float: left;
-    height: 190px;
+    height: 195.7px;
     width: 46%;
     margin: 0 2% 1% 1.75%;
     font-size: 22px;
+    line-height: 1.4;
     padding: 15px 5px 0 5px;
 }
 #number-to-guess {
@@ -70,4 +71,50 @@ img {
     width:100px;
     background: transparent;
     border: none;
+}
+@media screen and (max-width: 1200px) {
+    #directions {
+        font-size: 21.5px;
+    }
+    .score {
+        width: 47.3%;
+        height: 88.4px;
+    }
+}
+@media screen and (max-width: 992px) {
+    #directions {
+        font-size: 19.5px;
+    }
+    .score {
+        height: 90px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #directions {
+        font-size: 17px;
+        margin-left: 2.7%;
+    }
+    #total {
+        font-size: 20px;
+    }
+    #number-to-guess {
+        width: 20%;
+    }
+    .score {
+        width: 44%;
+        height: 93px;
+    }
+}
+@media screen and (max-width: 640px) {
+    #directions {
+        font-size: 15.5px
+    }
+    #total {
+        font-size: 18px;
+        padding-top: 20px;
+        height: 80px;
+    }
+    .score {
+        height: 94px;
+    }
 }
